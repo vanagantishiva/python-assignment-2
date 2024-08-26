@@ -1,0 +1,15 @@
+word = input("Enter the word: ")
+repeated_letters = {}
+for letter in word:
+    if letter in repeated_letters:
+        repeated_letters[letter] += 1
+    else:
+        repeated_letters[letter] = 1
+count = 0
+for letter, frequency in repeated_letters.items():
+    if frequency > 1:
+        count += 1
+        repeated_letter = letter
+print("Number of repeated letters =", count)
+if count > 0:
+    print("Repeated letter =", repeated_letter)
