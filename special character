@@ -1,0 +1,15 @@
+s='Modi birththday@ september 17 ,#&$% is the wish code for him'
+l=0
+n=0
+sp=0
+for char in s:
+    if ('a'<=char<='z') or ('A'<=char<='Z'):
+        l=l+1
+    elif '0'<=char<='9':
+        n=n+1
+    else:
+        sp=sp+1
+        
+print("no.of letters char is: ",l)
+print("no.of number char is: ",n)
+print("no.of special char is: ",sp)
