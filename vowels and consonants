@@ -1,0 +1,17 @@
+s= "Saveetha School of Engineering Sample"
+c=len(s)
+v=0
+co=0
+for j in range(0,c):
+    if s[j]=='A' or s[j]=='E' or s[j]=='I' or s[j]=='O' or s[j]=='U' or s[j]=='a' or s[j]=='e' or s[j]=='i' or s[j]=='o' or s[j]=='u':
+      v=v+1
+    else:
+        co=co+1
+print("vowel= ",v)
+print("consoen= ",co)
+if v> co:
+    print("Vowels are maximum")
+elif co>v:
+    print("Consonants are maximum")
+else:
+  print("Both are equal")
